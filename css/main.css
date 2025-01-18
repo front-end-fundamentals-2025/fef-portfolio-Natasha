@@ -7,6 +7,10 @@
 #logo{
     font-weight: 600;
     font-size: 1.5rem;
+    text-decoration: none;
+    a:hover {
+        color: #2a5c41;
+    }
 }
 
 ul {list-style: none;
@@ -16,11 +20,26 @@ a  {
     color: black;
 }
 
+a:hover {
+    color: #2a5c41;
+}
+
+
+
 /* MAIN */
 
 .main-img{
     width: 30%;
 }
+
+body {
+    background-color: #a0d8d0;
+    color: #333;
+}
+
+
+
+
 
 /* FOOTER */
 

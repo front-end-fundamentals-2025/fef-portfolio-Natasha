@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NRL</title>
+    <title>Contact Me - NRL</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,7 @@ rel="stylesheet">
     <header>
         <a href="index.html" id="logo">
         <p>Natasha Rincones Lazaballett</p>
+        </a>
         <nav>
             <ul>
                 <a href="about.html">
@@ -27,17 +28,29 @@ rel="stylesheet">
                 </a>
             </ul>
         </nav>
-    </header>
+    </header> 
+
     <main>
-        <img class="main-img" src="img/setup.jpg" alt="Picture of a computer setup">
-        <h1>My Portfolio</h1>
-        <p>I am a student at Jönköping University, pursuing a degree in New Media Design. This program combines interface design, web development, and marketing communication with a focus on user experience (UX). 
-        I am passionate about exploring new ways to integrate creativity with functionality to deliver engaging and accessible digital experiences.
-        </p>
+        <h1>Contact Me</h1>
+        
+        <section id="contact-form">
+            <form action="submit_form.php" method="POST">
+              <p> <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required></p>
+
+                <p><label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required></p>
+
+                <p><label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea></p>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
+
     <footer>
         <p>© NRL Portfolio 2025</p>
     </footer>
 </body>
-
 </html>
