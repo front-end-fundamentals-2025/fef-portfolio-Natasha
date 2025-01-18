@@ -1,0 +1,30 @@
+*{
+  font-family: "Roboto Condensed", serif;
+}
+
+/* HEADER */
+
+#logo{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+ul {list-style: none;
+padding-left: 0px;}
+
+a  {
+    color: black;
+}
+
+/* MAIN */
+
+.main-img{
+    width: 30%;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 4rem;
+    border-top: 1px solid black;
+}
