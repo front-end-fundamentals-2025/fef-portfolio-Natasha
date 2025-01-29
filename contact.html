@@ -23,6 +23,9 @@ rel="stylesheet">
                 <a href="about.html">
                     <li>About me</li>
                 </a>
+                <a href="projects.html">
+                    <li>My projects</li>
+                </a>
                 <a href="contact.html">
                     <li>Contact me</li>
                 </a>
@@ -32,23 +35,20 @@ rel="stylesheet">
 
     <main>
         <h1>Contact Me</h1>
-        
-        <section class="contact-form">
-            <form action="submit_form.php" method="POST">
-              <p> <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required></p>
+
+        <form>
+                <p><label for="name">Your Name:</label>
+                <input type="text" name="name" name="name" required></p>
 
                 <p><label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required></p>
+                <input type="email" name="email" name="email" required></p>
 
                 <p><label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea></p>
+                <textarea class= "message" name="message" rows="5" required></textarea></p>
 
                 <button type="submit">Send Message</button>
-            </form>
-        </section>
+        </form>
     </main>
-
     <footer>
         <p>© NRL Portfolio 2025</p>
     </footer>
