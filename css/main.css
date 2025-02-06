@@ -44,11 +44,18 @@ li {margin-right: 10px;
   /* MAIN */
   
   .main-img{
-      width: 30%;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display:block;
+      border-radius: 20px;
   }
 
   body {
-    background-color:#2a5c41;
+    background: linear-gradient(-45deg,#f2becf, #ee7752,#cdd783,#2a5c41);
+    background-size: 400% 400%;
+    animation: gradient 20s;
+    /*background-color:#2a5c41; */
     color:white;
 }
 
@@ -62,7 +69,46 @@ li {margin-right: 10px;
     margin-bottom: 5px;
     margin-right: auto;
 }
-  
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    align-items: center; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 2rem;
+}
+
+
+/*Animation: Button*/
+
+button {
+    background-color: darkseagreen;
+    color:#ffb84d;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    animation: pulse 0.6s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+/*Animation: Ball */
+
 
 .bouncing-circle {
     background-color:white;
@@ -75,7 +121,6 @@ li {margin-right: 10px;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease;
-
 }
 
 @keyframes bounce {
@@ -91,9 +136,35 @@ li {margin-right: 10px;
 }
 
 
+/*Animation: Background */
+
+@keyframes gradient{
+
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
   /* FOOTER */
   
   footer{
       margin-top: 4rem;
       border-top: 1px solid black;
   }
+
+
+
+  /*
+  RESOURCES
+
+  Gradient background
+  https://www.sliderrevolution.com/resources/css-animated-background/
+  */
