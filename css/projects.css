@@ -4,10 +4,10 @@ html, body {
     padding: 0;
 }
 
-
 *{
     font-family: "Roboto Condensed", serif;
 }
+
 
 body {
     /*position: relative;*/
@@ -34,6 +34,11 @@ ul {
 li {margin-right: 20px;
 justify-self: center;}
 
+p {
+    margin-top: 20px;
+    max-width: 80%;
+
+}
 
   a  {
     text-decoration: none;
@@ -69,11 +74,11 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 0.3em;
-    justify-self: center;
     width: 100%;
     max-width: 800px;
     margin: 0;
     grid-auto-rows: 200px;
+    margin-top: 10%;
 }
 
 section {
@@ -115,39 +120,6 @@ section {
     }
 }
 
-
-
-/* ANIMATION */
-
-.bouncing-circle {
-    background-color:white;
-    margin-top: 50px;
-    height: 2vw; 
-    width: 2vw; 
-    border-radius: 50%; 
-    animation-name: bounce;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease;
-
-}
-
-/*Animation: Ball */
-
-@keyframes bounce {
-    0% {
-        transform: translateX(0px);
-    }
-    50% {
-        transform: translateX(96vw); 
-    }
-    100% {
-        transform: translateX(0px); 
-    }
-}
-
-
 /*Animation: Background */
 
 @keyframes gradient{
@@ -164,10 +136,10 @@ section {
 
 }
 
-
 /* FOOTER */
 
 footer{
     margin-top: 4rem;
     border-top: 1px solid black;
+
 }
