@@ -76,9 +76,9 @@ img {
     gap: 0.3em;
     width: 100%;
     max-width: 800px;
-    margin: 0;
     grid-auto-rows: 200px;
     margin-top: 10%;
+    margin: 0 auto;
 }
 
 section {
@@ -141,5 +141,4 @@ section {
 footer{
     margin-top: 4rem;
     border-top: 1px solid black;
-
 }
